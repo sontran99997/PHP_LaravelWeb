@@ -9,18 +9,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <header class="row"></header>
         <div class="row">
             <aside class="col-3">
-                left
+                @include("left")
             </aside>
             <div class="col-9">
                 @yield("main")
             </div>
         </div>
         <footer class="row">
-
+            @include("footer")
         </footer>
     </div>
 </body>

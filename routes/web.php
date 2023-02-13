@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [IndexController::class, "home"]);
+Route::get('/chi-tiet/{pro}-{id}.html',[IndexController::class, "detail"]);
+Route::get('/gio-hang/-{id}.html',[IndexController::class, "addcart"]);
